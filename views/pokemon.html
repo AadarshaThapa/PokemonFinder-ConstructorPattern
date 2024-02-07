@@ -1,0 +1,9 @@
+<div id="pokedex">
+    <div class="card-container">
+        <div class="card" ng-repeat="pokemon in appCtrl.pokemonData | filter:appCtrl.filterPokemon">
+            <img class="card-image" ng-src="{{ pokemon.image }}" alt="{{ pokemon.name }}" />
+            <h2 class="card-title">{{ pokemon.name }}</h2>
+            <p class="card-subtitle">{{ pokemon.type }}</p>
+        </div>
+    </div>
+</div>

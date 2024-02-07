@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokemonApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" sizes=" 40x40" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <title>Pokemon Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div ng-controller="AppController">
+        <div class="header">
+            <h1>Pokemon List</h1>
+            <search></search>
+        </div>
+
+        <pokemon-list pokemon-data="pokemonData" search-query="searchQuery"></pokemon-list>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
