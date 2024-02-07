@@ -1,0 +1,16 @@
+<div ng-controller="AppController">
+    <div class="header">
+        <h1>Pokemon List</h1>
+        <input type="text" id="searchbar" ng-model="searchQuery" placeholder="Search Pokemon...">
+    </div>
+
+    <div id="pokedex">
+        <div class="card-container">
+            <div class="card" ng-repeat="pokemon in pokemonData | filter:filterPokemon">
+                <img class="card-image" ng-src="{{ pokemon.image }}" alt="{{ pokemon.name }}" />
+                <h2 class="card-title">{{ pokemon.name }}</h2>
+                <p class="card-subtitle">{{ pokemon.type }}</p>
+            </div>
+        </div>
+    </div>
+</div>
