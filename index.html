@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <div ng-controller="AppController">
+    <div>
         <div class="header">
             <h1>Pokemon List</h1>
-            <search></search>
-        </div>
+            <search on-search-change="$appCtrl.updateSearch(query)"></search>
 
+        </div>
         <pokemon-list pokemon-data="pokemonData" search-query="searchQuery"></pokemon-list>
     </div>
 

@@ -1,0 +1,12 @@
+<body>
+    <div class="pokemon-details" ng-controller="PokemonDetailsController as detailsCtrl">
+        <img class="card-image" ng-src="{{ detailsCtrl.selectedPokemon.image }}"
+            alt="{{ detailsCtrl.selectedPokemon.name }}" />
+        <h2 class="card-title">{{ detailsCtrl.selectedPokemon.name }}</h2>
+        <p class="card-subtitle">{{ detailsCtrl.selectedPokemon.type }}</p>
+    </div>
+
+
+</body>
+
+</html>

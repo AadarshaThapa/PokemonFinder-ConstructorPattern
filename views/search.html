@@ -1,1 +1,2 @@
-<input type="text" id="searchbar" ng-model="appCtrl.searchQuery" placeholder="Search Pokemon...">
+<input type="text" id="searchbar" ng-model="searchCtrl.searchQuery" ng-change="searchCtrl.updateSearch()"
+    placeholder="Search Pokemon...">
